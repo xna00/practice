@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rainbow</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: white;
+    }
+
+    .rainbow {
+      height: 250px;
+      overflow: hidden;
+    }
+
+    .rainbow div {
+      /* 不能删除这一行 */
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+    .rainbow>div {
+      margin: 0;
+      background: red;
+      width: 500px;
+      height: 500px;
+    }
+
+    .rainbow>div>div {
+      background: orange;
+      margin: 10px;
+      width: 480px;
+      height: 480px;
+    }
+
+    .rainbow>div>div>div {
+      background: yellow;
+      margin: 10px;
+      width: 460px;
+      height: 460px;
+    }
+
+    .rainbow>div>div>div>div {
+      background: green;
+      margin: 10px;
+      width: 440px;
+      height: 440px;
+    }
+
+    .rainbow>div>div>div>div>div {
+      background: cyan;
+      margin: 10px;
+      width: 420px;
+      height: 420px;
+    }
+
+    .rainbow>div>div>div>div>div>div {
+      background: blue;
+      margin: 10px;
+      width: 400px;
+      height: 400px;
+    }
+
+    .rainbow>div>div>div>div>div>div>div {
+      background: purple;
+      margin: 10px;
+      width: 380px;
+      height: 380px;
+    }
+
+    .rainbow>div>div>div>div>div>div>div>div {
+      background: white;
+      margin: 10px;
+      width: 360px;
+      height: 360px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="rainbow">
+    <div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
