@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .heart {
+      display: inline-block;
+      margin: 100px;
+      position: relative;
+      transition: all 1s;
+    }
+    .heart:hover {
+      transform: scale(1.2);
+    }
+    .left {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: -50px;
+      bottom: 50px;
+      border-radius: 50% 0 0 50%;
+      transform: rotate(45deg) translateX(31px);
+      background: red;
+    }
+    .right {
+      width: 50px;
+      height: 50px;
+      right: -50px;
+      bottom: 50px;
+      border-radius: 50% 50% 0 0;
+      transform: rotate(45deg) translateY(31px) translateX(0px);
+      position: absolute;
+      background: red;
+    }
+    .bottom {
+      width: 50px;
+      height: 50px;
+      transform: rotate(45deg);
+      background: red;
+    }
+    .beating-heart {
+      display: inline-block;
+      margin: 100px;
+      position: relative;
+      animation: 0.8s beat infinite alternate-reverse;
+    }
+    @keyframes beat {
+      0%{
+        transform: scale(1);
+      }
+      100%{
+        transform: scale(1.2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="heart">
+      <div class="left"></div>
+      <div class="right"></div>
+      <div class="bottom"></div>
+    </div>
+  </div>
+  <div>
+    <div class="beating-heart">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+  </div>
+</div>
+</body>
+</html>
